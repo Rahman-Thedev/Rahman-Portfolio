@@ -307,7 +307,7 @@ const Projects = () => {
             icon={Monitor}
             description="Standalone freelancing web application with functional user interactions and a focus on clean logic over visual excess."
             tags={['HTML', 'CSS', 'JS', 'Freelance']}
-            link="https://wirerichie.github.io/Resume_Shop/"
+            link="https://rahman-thedev.github.io/Resume_Shop/"
           />
           <ProjectCard 
             title="Driver Safety System"
