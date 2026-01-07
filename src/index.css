@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  background-color: #05070a;
+  color: white;
+}
+
+/* Ensure the body inherits the background if not explicitly set by the app */
+body {
+  margin: 0;
+  background-color: #05070a;
+  color: white;
+}
