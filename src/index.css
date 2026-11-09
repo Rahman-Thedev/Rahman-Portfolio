@@ -1,13 +1,119 @@
 @import "tailwindcss";
 
-:root {
-  background-color: #05070a;
-  color: white;
+/* ---------- Design tokens ---------- */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Graphite surfaces */
+  --color-ink: #0f0d0e;
+  --color-graphite: #161315;
+  --color-graphite-2: #1d191b;
+  --color-line: #2b2528;
+  --color-line-strong: #3d3438;
+
+  /* Text */
+  --color-paper: #efe9e6;
+  --color-muted: #aba19e;
+  --color-faint: #877d7a;
+
+  /* Burgundy and crimson */
+  --color-burgundy-deep: #22090f;
+  --color-burgundy: #4a1220;
+  --color-crimson: #b3253c;        /* fills, with paper text on top (6.5:1) */
+  --color-crimson-hover: #c22f47;
+  --color-crimson-text: #ec5d73;   /* accent text on ink (5.5:1) */
 }
 
-/* Ensure the body inherits the background if not explicitly set by the app */
+/* ---------- Base ---------- */
+:root {
+  color-scheme: dark;
+  background-color: var(--color-ink);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5.5rem;
+}
+
 body {
   margin: 0;
-  background-color: #05070a;
-  color: white;
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-crimson);
+  color: var(--color-paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-crimson-text);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Section anchors receive focus after in-page navigation; don't draw a ring around whole sections. */
+section[tabindex="-1"]:focus,
+section[tabindex="-1"]:focus-visible {
+  outline: none;
+}
+
+/* A single, quiet backdrop: one burgundy glow behind the top of the page. */
+.page-backdrop {
+  background:
+    radial-gradient(60rem 36rem at 85% -10%, rgb(74 18 32 / 0.55), transparent 70%),
+    radial-gradient(40rem 30rem at -10% 10%, rgb(34 9 15 / 0.6), transparent 70%);
+}
+
+/* In the components layer so Tailwind utilities (e.g. a text colour) can override them. */
+@layer components {
+.display {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.02;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-faint);
+}
+
+.prose-body p + p {
+  margin-top: 1rem;
+}
+}
+
+/* ---------- Motion ---------- */
+/* Reveal only runs when JS has opted in (html.js-reveal), so content is never hidden without it. */
+@media (prefers-reduced-motion: no-preference) {
+  .js-reveal [data-reveal] {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 700ms cubic-bezier(0.2, 0.7, 0.2, 1), transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .js-reveal [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
