@@ -33,7 +33,7 @@ Update `now.updated` in `profile.js` whenever the Now section changes.
 
 ## Deployment
 
-Built for Vercel. The public URL used in canonical, Open Graph and sitemap tags resolves in this order: the `SITE_URL` environment variable, then Vercel's `VERCEL_PROJECT_PRODUCTION_URL`, then a fallback in `vite.config.js`. Set `SITE_URL` once a custom domain exists.
+Built for Vercel. The public URL used in canonical, Open Graph and sitemap tags resolves in this order: the `SITE_URL` environment variable, then Vercel's `VERCEL_PROJECT_PRODUCTION_URL`, then the fallback `https://itsrahman-thedevportfolio.vercel.app` in `vite.config.js`. Set `SITE_URL` once a custom domain exists.
 
 `vercel.json` also sets security headers (CSP, HSTS, nosniff, frame and referrer policies) and long-lived caching for hashed assets.
 

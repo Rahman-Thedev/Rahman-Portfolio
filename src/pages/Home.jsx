@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Instagram, MessageCircle } from 'lucide-react'
+import { ArrowRight, Github, Instagram, Linkedin, MessageCircle } from 'lucide-react'
 import { links, now, principles, profile } from '../content/profile.js'
 import { builds, ventures } from '../content/work.js'
 import { education, experience } from '../content/experience.js'
@@ -30,6 +30,7 @@ export default function Home() {
 
 function Hero() {
   const socials = [
+    { href: links.linkedin, label: 'LinkedIn', Icon: Linkedin },
     { href: links.github, label: 'GitHub', Icon: Github },
     { href: links.instagram, label: 'Instagram', Icon: Instagram },
     { href: links.whatsapp, label: 'WhatsApp', Icon: MessageCircle },
@@ -80,8 +81,8 @@ function Hero() {
               {[
                 ['Building', <Link key="b" to="/work/beudryt" className="text-paper underline decoration-line-strong underline-offset-4 hover:decoration-crimson-text">BEUDRYT</Link>, 'Founder · Live'],
                 ['Ventures', 'CareerBoost Hub · MyKudi', null],
-                ['Collaborating', 'Aegis at Moondance', null],
-                ['Studying', 'Computer Science, KWASUED', null],
+                ['Product role', 'Lead Product Engineer, MoonDance', null],
+                ['Studying', 'B.Sc. (Ed.) Computer Science, KWASUED', null],
                 ['Based in', profile.location, null],
               ].map(([k, v, extra]) => (
                 <div key={k} className="flex items-baseline justify-between gap-6 py-3.5">
@@ -132,8 +133,8 @@ function Work() {
       <SectionHeader
         index="01"
         eyebrow="Selected work"
-        title={<span id="work-title">Ventures, products and collaborations</span>}
-        lede="One live product I lead end to end, two ventures I founded or co-founded, and a product collaboration. Each links to a fuller write-up."
+        title={<span id="work-title">Products, ventures and roles</span>}
+        lede="A live product I lead end to end, my product engineering role at MoonDance, and two ventures I founded or co-founded. Each links to a fuller write-up."
       />
 
       {/* Featured: BEUDRYT */}

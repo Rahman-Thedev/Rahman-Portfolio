@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Check, Copy, Github, Instagram, Mail, MessageCircle } from 'lucide-react'
+import { Check, Copy, Github, Instagram, Linkedin, Mail, MessageCircle } from 'lucide-react'
 import { links } from '../content/profile.js'
 import { Section, SectionHeader } from './ui.jsx'
 
@@ -33,6 +33,7 @@ export default function Contact() {
   }
 
   const channels = [
+    { label: 'LinkedIn', value: 'Shamsudeen Abdul Rahman', href: links.linkedin, Icon: Linkedin },
     { label: 'WhatsApp', value: 'Message directly', href: links.whatsapp, Icon: MessageCircle },
     { label: 'GitHub', value: 'rahman-thedev', href: links.github, Icon: Github },
     { label: 'Instagram', value: links.instagramHandle, href: links.instagram, Icon: Instagram },

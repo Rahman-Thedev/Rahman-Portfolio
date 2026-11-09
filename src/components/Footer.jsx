@@ -17,11 +17,12 @@ export default function Footer() {
           </p>
         </div>
 
-        <nav aria-label="Footer" className="grid grid-cols-2 gap-x-12 gap-y-3 text-sm sm:grid-cols-3">
+        <nav aria-label="Footer" className="grid grid-cols-2 gap-x-12 gap-y-3 text-sm sm:grid-cols-4">
           <Link to="/#work" className="text-muted hover:text-paper">Work</Link>
           <Link to="/lab" className="text-muted hover:text-paper">Lab</Link>
           <Link to="/writing" className="text-muted hover:text-paper">Writing</Link>
           <a href={`mailto:${links.email}`} className="text-muted hover:text-paper">Email</a>
+          <a href={links.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted hover:text-paper">LinkedIn</a>
           <a href={links.github} target="_blank" rel="noopener noreferrer" className="text-muted hover:text-paper">GitHub</a>
           <a href={links.instagram} target="_blank" rel="noopener noreferrer" className="text-muted hover:text-paper">Instagram</a>
         </nav>

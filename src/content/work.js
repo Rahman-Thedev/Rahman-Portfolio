@@ -10,7 +10,7 @@ export const ventures = [
     name: 'BEUDRYT',
     tagline: 'An evidence-driven operating system for first-time founders.',
     role: 'Founder · Product and engineering lead',
-    period: '2026 – Present',
+    period: 'Jul 2024 – Present',
     status: 'Live',
     kind: 'Principal project',
     featured: true,
@@ -105,16 +105,60 @@ export const ventures = [
     },
   },
   {
+    slug: 'aegis',
+    name: 'Aegis',
+    tagline: 'An AI employee that takes work from chat to a finished result, built by MoonDance Systems.',
+    role: 'Lead Product Engineer · MoonDance Systems',
+    period: 'Oct 2026 – Present',
+    status: 'Active',
+    kind: 'Role',
+    link: { href: 'https://getaegis.org', label: 'getaegis.org' },
+    summary:
+      'Aegis is an AI-powered co-worker: you give it a job in Slack, Telegram, Discord or on the web, and it carries research, code, reports and recurring work through to a finished result. As Lead Product Engineer I contribute to its product strategy and development. Aegis is MoonDance’s product; I am part of the team, not an owner or officer.',
+    highlights: [
+      'Product strategy and direction for an AI agent product',
+      'Launching product features and running product operations',
+      'Working between design and engineering so decisions are made once and made clearly',
+    ],
+    stack: ['Product strategy', 'Product engineering', 'Product operations', 'AI agents', 'Launch'],
+    caseStudy: {
+      intro:
+        'Most AI tools hand you a draft and leave the rest to you. Aegis is built to finish the job. My work is making sure what gets built is the right thing, in the right order, and that it actually ships.',
+      facts: [
+        { label: 'Role', value: 'Lead Product Engineer' },
+        { label: 'Company', value: 'MoonDance Systems' },
+        { label: 'Since', value: 'October 2026' },
+        { label: 'Setup', value: 'Hybrid. Team member, not an owner or officer.' },
+      ],
+      sections: [
+        {
+          title: 'The product',
+          paragraphs: [
+            'Aegis works where teams already talk. A request in chat becomes a piece of finished work, whether that is research, code, a report or a recurring task, so people can hand off the job instead of supervising it step by step.',
+          ],
+        },
+        {
+          title: 'My role',
+          list: [
+            'Contributing to Aegis’s product strategy: what it should do, for whom, and what comes first.',
+            'Product development and launch work, from shaping a feature to getting it in front of users.',
+            'Product operations and coordination across design and engineering.',
+          ],
+        },
+      ],
+    },
+  },
+  {
     slug: 'careerboost-hub',
     name: 'CareerBoost Hub',
     tagline: 'Career positioning services built around how hiring systems actually read applications.',
     role: 'Founder',
-    period: null,
-    status: null,
+    period: 'Mar 2025 – Present',
+    status: 'Active',
     kind: 'Venture',
     link: null,
     summary:
-      'A career development venture offering ATS-optimised resumes, cover letters, LinkedIn positioning, interview preparation and executive biographies. I design the services, set the packaging and pricing, and deliver the work.',
+      'A career venture that helps people get hired. Today that means ATS-optimised resumes, cover letters, LinkedIn positioning, interview preparation and executive biographies. The aim is a career marketplace that connects candidates with the right hires. I design the services, set the packaging and pricing, and deliver the work.',
     highlights: [
       'ATS resume strategy: structure, keywords and formatting that survive applicant tracking systems',
       'Service design, packaging and pricing for individual clients',
@@ -126,7 +170,8 @@ export const ventures = [
         'Good candidates are often filtered out before a person reads their application. CareerBoost Hub exists to fix the parts of that problem that are fixable: structure, clarity and positioning.',
       facts: [
         { label: 'Role', value: 'Founder' },
-        { label: 'Type', value: 'Service venture' },
+        { label: 'Since', value: 'March 2025' },
+        { label: 'Type', value: 'Career services, growing toward a marketplace' },
       ],
       sections: [
         {
@@ -179,42 +224,6 @@ export const ventures = [
           title: 'What it is not, yet',
           paragraphs: [
             'MyKudi does not hold customer funds or move real money. Any production version needs a licensed partner, compliance work and a security review before it handles a single naira.',
-          ],
-        },
-      ],
-    },
-  },
-  {
-    slug: 'aegis',
-    name: 'Aegis',
-    tagline: 'An AI agent co-working product spanning software and hardware, at Moondance.',
-    role: 'Product management · Design and engineering collaboration',
-    period: null,
-    status: null,
-    kind: 'Collaboration',
-    link: null,
-    summary:
-      'I collaborate on Aegis as a product contributor: assessing the product, shaping its direction, and working between design and engineering to keep execution focused. Aegis is Moondance’s product; my role is collaboration, not ownership.',
-    highlights: [
-      'Product assessment and direction',
-      'Coordinating design and engineering decisions',
-      'Helping shape execution priorities',
-    ],
-    stack: ['Product management', 'Product design', 'AI agents', 'Hardware and software'],
-    caseStudy: {
-      intro:
-        'Aegis explores AI agents as co-workers, across both software and hardware. My contribution is on the product side: making sure what gets built is the right thing, in the right order.',
-      facts: [
-        { label: 'Role', value: 'Product management, design and engineering collaboration' },
-        { label: 'Company', value: 'Moondance (I am a collaborator, not an owner or officer)' },
-      ],
-      sections: [
-        {
-          title: 'My involvement',
-          list: [
-            'Assessing the product: what it does well, where it is unclear, and what users would need to trust it.',
-            'Shaping product direction and priorities with the team.',
-            'Working across design and engineering so decisions are made once and made clearly.',
           ],
         },
       ],

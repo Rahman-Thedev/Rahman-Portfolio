@@ -7,7 +7,7 @@ import { ROUTES } from './src/content/routes.js'
 const SITE_URL = (
   process.env.SITE_URL ||
   (process.env.VERCEL_PROJECT_PRODUCTION_URL && `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`) ||
-  'https://rahman-portfolio-nu.vercel.app'
+  'https://itsrahman-thedevportfolio.vercel.app'
 ).replace(/\/$/, '')
 
 const siteFiles = () => ({

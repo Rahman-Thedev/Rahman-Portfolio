@@ -12,7 +12,7 @@ Date: 9 November 2026. Scope: the existing `Rahman-Portfolio` codebase, its live
 | Visual system | Emerald and cyan neon on near-black, falling "matrix" lines, animated fake terminal, pulsing badges, `Technical_Specifications`-style headings. |
 | Boilerplate left over | `App.css` (Vite starter, unused), `assets/react.svg`, `public/vite.svg` favicon, `tailwind.config.js` (v3 format, ignored by Tailwind 4), `autoprefixer` (redundant in Tailwind 4). |
 | Tooling | `npm run build` passes. `npm run lint` is broken: ESLint 9 is installed but there is no `eslint.config.js`. There is no `.gitignore`. |
-| Deployment | No `vercel.json`. The repo's declared homepage `rahman-portfolio-nu.vercel.app` returns 404. |
+| Deployment | No `vercel.json`. The repo's declared homepage `rahman-portfolio-nu.vercel.app` returns 404. The live site is `itsrahman-thedevportfolio.vercel.app` (confirmed by the owner). |
 | SEO | `<title>my-portfolio</title>`, no description, no Open Graph, no favicon of its own, no sitemap or robots. |
 | Accessibility | Icon-only links with no labels, form inputs with unassociated labels, nav built from `<button>`s, no skip link, no focus styles, no reduced-motion handling, body text at 10px in places. |
 
@@ -33,9 +33,17 @@ Date: 9 November 2026. Scope: the existing `Rahman-Portfolio` codebase, its live
 - **MyKudi** (`mykudi-smart-finance`, `mykudi`): React, TypeScript, Vite, shadcn/ui and Supabase prototype generated with Lovable. Screens: dashboard, savings, bills, transfers, transactions, an AI assistant. No production deployment found. Represented as a prototype.
 - **Security note:** `mykudi-smart-finance` has a `.env` file committed to git. It needs to be removed from history and any keys in it rotated (see the final report).
 
-### No evidence found (stated by the owner only)
+### Stated by the owner, not independently verified
 
-CareerBoost Hub, Aegis / Moondance, freelance engagements, KWASUED enrolment details, dates for all of these. They are presented conservatively, with no metrics, and every date that cannot be verified is left out rather than guessed.
+Dates and titles below come from the owner's LinkedIn, supplied after the first pass. The Aegis site is live.
+
+- BEUDRYT: Jul 2024 to present. The earliest BEUDRYT code on GitHub is from September 2026.
+- CareerBoost Hub: Founder, Mar 2025 to present.
+- MoonDance Systems: Lead Product Engineer on Aegis (getaegis.org), Oct 2026 to present.
+- KWASUED: B.Sc. (Ed.) Computer Science, in progress.
+- Freelance engagements: no details or dates supplied, so none are shown.
+
+All of these are presented without metrics.
 
 ## 3. Strengths worth keeping
 

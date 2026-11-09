@@ -9,7 +9,7 @@ export const profile = {
   roles: ['Software Engineer', 'Product Builder', 'Entrepreneur', 'Aspiring Cybersecurity Professional'],
   headline: 'I build products that have to hold up in the real world.',
   intro:
-    'I’m Rahman, a Computer Science student in Nigeria. I founded BEUDRYT and lead its product and engineering, a live platform that helps first-time founders test ideas with evidence before they build. Alongside it I run CareerBoost Hub, work on fintech with Klei, and I’m building a disciplined foundation in cybersecurity.',
+    'I’m Rahman, a Computer Science student in Nigeria. I founded BEUDRYT and lead its product and engineering, a live platform that helps first-time founders test ideas with evidence before they build. I’m also Lead Product Engineer on Aegis at MoonDance Systems, I run CareerBoost Hub, and I’m building a disciplined foundation in cybersecurity.',
 }
 
 export const links = {
@@ -18,7 +18,7 @@ export const links = {
   instagram: 'https://www.instagram.com/the_omenvoid_oracle',
   instagramHandle: '@the_omenvoid_oracle',
   whatsapp: 'https://wa.me/message/AUPT4YAL4MXBP1',
-  // Add when available: linkedin: 'https://www.linkedin.com/in/...'
+  linkedin: 'https://www.linkedin.com/in/shamsudeen-abdul-rahman-97ba622b8',
 }
 
 // Update this block whenever priorities change. Keep it honest and current.
@@ -34,12 +34,12 @@ export const now = {
       text: 'Linux and networking fundamentals, then the OWASP Top 10, applied to software I already run.',
     },
     {
-      label: 'Collaborating',
-      text: 'Product direction and design and engineering coordination on Aegis, an AI agent co-working product at Moondance.',
+      label: 'Shipping',
+      text: 'Product strategy and launches on Aegis, the AI employee from MoonDance Systems, as Lead Product Engineer.',
     },
     {
       label: 'Studying',
-      text: 'Computer Science at KWASUED.',
+      text: 'B.Sc. (Ed.) Computer Science at KWASUED.',
     },
   ],
 }
